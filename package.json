@@ -1,6 +1,6 @@
 {
   "name": "dom-inserted",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./src/index.js",
   "description": "listen for node insertion",
   "author": "Steffen Bär <stbaer.pub@gmail.com>",
