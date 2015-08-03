@@ -1,5 +1,6 @@
 var CustomEvent = require('custom-event');
 
+// @TODO - use a module for this
 function insertCss(className, animationName) {
     var css =
         '@-webkit-keyframes ' + animationName + ' { from { clip: rect(1px, auto, auto, auto); } to { clip: rect(0px, auto, auto, auto); } }' +
@@ -20,13 +21,6 @@ function insertCss(className, animationName) {
     }
 }
 
-function createInsertedEvent(evTarget, animationName){
-    var ev = new Event('inserted');
-    ev.initEvent('inserted', false, true);
-    ev.inserted = event.target;
-    ev.animationName = event.animationName;
-}
-
 function listen(className) {
 
     className = className || 'inserted';
@@ -37,8 +31,7 @@ function listen(className) {
     insertListener = function(ev) {
         var evTarget = ev.target;
         var newEvent;
-        if (ev.animationName === animationName && evTarget.dataset.inserted) {
-            evTarget.dataset.inserted = true;
+        if (ev.animationName === animationName) {
 
             newEvent = new CustomEvent('inserted', {
                 bubbles: false,

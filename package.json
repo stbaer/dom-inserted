@@ -11,8 +11,8 @@
   "scripts": {
     "test": "browserify test/unit/*.js | browser-run | faucet",
     "show-gzipped-minjs-size": "echo \"js minified and gzipped: \" && gzip -c build/dom-inserted.min.js | wc -c",
-    "bundle": "browserify src/index.js -s dom-inserted -o build/dom-inserted.js",
-    "uglify:build": "uglifyjs --screw-ie8 --stats -vcm build/dom-inserted.js > build/dom-inserted.min.js",
+    "bundle": "browserify src/index.js -s domInserted -o build/dom-inserted.js",
+    "uglify:build": "uglifyjs --screw-ie8 --stats -v build/dom-inserted.js -cm > build/dom-inserted.min.js",
     "uglify": "npm run uglify:build",
     "build": "npm run bundle && npm run uglify && npm run show-gzipped-minjs-size"
   },

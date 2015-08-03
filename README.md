@@ -8,16 +8,16 @@
 
 `npm i dom-inserted`
 
-[![NPM](https://nodei.co/npm/dom-inserted.png)](https://www.npmjs.com/package/dom-inserted)
+[![NPM](https://nodei.co/npm/dom-inserted.png?downloads=true)](https://www.npmjs.com/package/dom-inserted)
 
 ```js
 var domInserted = require('dom-inserted');
 
-// Listen for elements that have a .inserted class being inserted
+// Listen for elements that have a .inserted class
 domInserted.listen();
 
-// Listen for elements that have a .custom class being inserted
-dom-inserted.listen('custom')
+// Listen for elements that have a .custom class
+domInserted.listen('custom')
 
 document.addEventListener('inserted', onInserted, false);
 
