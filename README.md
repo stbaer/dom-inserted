@@ -22,8 +22,8 @@ domInserted.listen('custom')
 document.addEventListener('inserted', onInserted, false);
 
 function onInserted(ev){
-    // ev.details contains: {animationName: ..., insertedElement: ...}
-    var evDetails = ev.details;
+    // ev.detail contains: {animationName: ..., insertedElement: ...}
+    var evDetail = ev.detail;
 }
 ```
 ## Standalone
