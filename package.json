@@ -1,6 +1,6 @@
 {
   "name": "dom-inserted",
-  "version": "0.0.3-0",
+  "version": "0.0.3",
   "main": "./src/index.js",
   "description": "listen for node insertion",
   "author": "Steffen Bär <stbaer.pub@gmail.com>",
@@ -20,12 +20,12 @@
     "custom-event": "^1.0.0"
   },
   "devDependencies": {
-    "browser-run": "^2.1.0",
+    "browser-run": "^2.6.0",
     "faucet": "latest",
-    "browserify": "^11.0.1",
-    "tape": "^4.0.1",
+    "browserify": "^11.2.0",
+    "tape": "^4.2.0",
     "testling": "^1.7.1",
-    "uglifyjs": "latest",
-    "watchify": "^3.3.1"
+    "uglify-js": "latest",
+    "watchify": "^3.4.0"
   }
 }

@@ -2,7 +2,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-> Listen for DOM node insertion, see http://davidwalsh.name/detect-node-insertion
+> Listen for DOM node insertion, see [detect-node-insertion](http://davidwalsh.name/detect-node-insertion)
 
 ## Usage
 
